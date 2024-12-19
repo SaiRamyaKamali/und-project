@@ -416,11 +416,13 @@ footer {
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease;
+    z-index: 1000;
   }
 
   header nav.active {
     height: 100vh;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
 
   header nav a {
@@ -626,4 +628,8 @@ footer {
 
 .menu-open .cta-button {
   display: none;
+}
+
+body.menu-open {
+  position: fixed;
 }
