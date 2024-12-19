@@ -1,3 +1,3 @@
-# und-proj
+# Leading with Purpose Showcase Mini-Site
 
-A mini site to promote a new social media campaign for the University.
+This project is a showcase mini-site created to promote the University’s new social media campaign, "Leading with Purpose."
