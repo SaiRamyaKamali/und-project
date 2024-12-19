@@ -144,6 +144,14 @@ header nav a:hover::after {
   display: none;
 }
 
+.president-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #000;
+  text-align: center;
+}
+
 #president-endorsement h1 {
   color: #009a44;
   margin-bottom: 10px;
@@ -471,7 +479,7 @@ footer {
   }
 
   .president-img {
-    max-width: 300px;
+    max-width: 250px;
     border-radius: 10px;
   }
 
@@ -529,8 +537,11 @@ footer {
 
   #post-list h1{
     font-size: 28px;
+  }  
+
+  .president-name {
+    font-size: 16px;
   }
-  
 
 }
 
@@ -572,12 +583,8 @@ footer {
     max-width: 300px;
   }
 
-  .president-name-md {
+  .president-name{
     font-size: 14px;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #000;
-    text-align: center;
   }
 
   #message-section {
@@ -679,14 +686,6 @@ footer {
 .president-img {
   width: 100%;
   height: auto;
-}
-
-.president-name {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #000;
-  text-align: center;
 }
 
 .menu-open .cta-button {
