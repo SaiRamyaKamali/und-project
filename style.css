@@ -164,7 +164,7 @@ header nav a:hover::after {
   right: 20px;
   background-color: #009A44;
   color: white;
-  padding: 15px;
+  padding: 8px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -174,43 +174,46 @@ header nav a:hover::after {
   transition: all 0.3s ease;
   z-index: 9999;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 .cta-button:hover {
-  border-radius: 5px;
-}
-
-.cta-button .icon {
-  font-size: 24px;
-}
-
-.cta-button .text {
-  display: none;
-  margin-left: 10px;
-  font-size: 16px;
-}
-
-.cta-button:hover .icon {
-  display: none;
-}
-
-.cta-button:hover{
-  border-radius: none;
-}
-
-.cta-button:hover .text {
-  max-width: 400px;
-  display: inline;
-  opacity: 1;
-}
-
-.cta-button:hover {
+  border-radius: 10px;
   background-color: white;
   color: #009A44;
 }
 
-.cta-button:focus {
-  outline: none;
+.cta-button .icon {
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button .text {
+  display: inline-block;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 10px;
+  font-size: 16px;
+  opacity: 0;
+  transition: max-width 0.3s ease, opacity 0.3s ease;
+}
+
+.cta-button:hover .icon {
+  opacity: 0;
+}
+
+.cta-button:hover .text {
+  max-width: 200px;
+  opacity: 1;
+}
+
+.fa-share:before{
+  margin-left: 10px;
+}
+
+.cta-button:hover .fa-share:before {
+  margin-left: 0px;
 }
 
 /* Campaign Goals Section */
@@ -479,6 +482,12 @@ footer {
   .carousel-container{
     display: block;
   }
+
+  .cta-button{
+    bottom: 10px;
+    right: 10px;
+  }
+
 }
 
 @media (min-width: 770px) and (max-width: 1128px) {
