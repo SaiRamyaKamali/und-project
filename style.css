@@ -294,7 +294,11 @@ header nav a:hover::after {
   align-items: center;
   margin-bottom: 20px;
 }
-
+.no-posts{
+  text-align: center;
+  font-size: 22px;
+  color:#AEAEAE;
+}
 .post-content {
   margin-bottom: 10px;
 }

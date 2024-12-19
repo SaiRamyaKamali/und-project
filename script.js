@@ -53,6 +53,11 @@ function displayPosts(posts) {
     const endIndex = startIndex + postsPerPage;
     const paginatedPosts = posts.slice(startIndex, endIndex);
 
+    if (posts.length === 0) {
+        postsContainer.innerHTML = "<p class='no-posts'>No Posts Found!!</p>";
+        return;
+    }
+    
     paginatedPosts.forEach((post) => {
         const formattedDate = formatDate(post.date);
         const postCard = `
