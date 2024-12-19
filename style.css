@@ -144,7 +144,7 @@ header nav a:hover::after {
   display: none;
 }
 
-#president-endorsement h2 {
+#president-endorsement h1 {
   color: #009a44;
   margin-bottom: 10px;
 }
@@ -156,6 +156,11 @@ header nav a:hover::after {
 
 #president-endorsement li {
   margin-bottom: 5px;
+}
+
+.message p{
+  font-size: 20px;
+  text-align: justify;
 }
 
 .cta-button {
@@ -244,11 +249,13 @@ header nav a:hover::after {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .subsection p {
   font-size: 1rem;
   color: #000 ;
+  font-size: 17px;
 }
 
 /* Post List Section */
@@ -257,17 +264,18 @@ header nav a:hover::after {
   background: #e0e0e0;
 }
 
-#post-list h2 {
+#post-list h1 {
   color: #009A44;
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #search {
   display: block;
   width: 100%;
   max-width: 500px;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -289,6 +297,11 @@ header nav a:hover::after {
 
 .post-content {
   margin-bottom: 10px;
+}
+
+.post-meta{
+  display: flex;
+  justify-content: space-between;
 }
 
 .image {
@@ -488,6 +501,33 @@ footer {
     right: 10px;
   }
 
+  #president-endorsement h1 {
+    color: #009a44;
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+
+  .message p{
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .carousel-item p{
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .carousel-item h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px 10px 0px 10px;
+  }
+
+  #post-list h1{
+    font-size: 28px;
+  }
+  
+
 }
 
 @media (min-width: 770px) and (max-width: 1128px) {
@@ -498,8 +538,6 @@ footer {
     min-width: 300px;
     max-width: 800px;
   }
-
- 
 
   #president-endorsement {
     margin-top: 15px;
@@ -516,6 +554,10 @@ footer {
 
   .carousel-container{
     display: block;
+  }
+
+  .carousel-item h3{
+    font-weight: bold;
   }
 
   #campaign-goals .section-heading {
@@ -539,9 +581,17 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .message p{
+    font-size: 16px;
+    text-align: justify;
+  }
 
-  .message {
-    padding: 24px;
+  .message h1{
+    font-size: 30px;
+  }
+
+  #post-list h1{
+    font-size: 30px;
   }
 
   .cta-button-md {
